@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu sản phẩm - Product Introduction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-section {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-section h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .product-description {
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #666;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-icon {
+            font-size: 2em;
+        }
+
+        .feature-card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .pricing-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .pricing-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price-details {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .product-section h2 {
+                font-size: 1.8em;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Sản phẩm của chúng tôi</h1>
+            <p>Giải pháp hoàn hảo cho nhu cầu của bạn</p>
+            <a href="#contact" class="cta-button">Dùng thử ngay</a>
+        </header>
+
+        <div class="product-section">
+            <h2>Giới thiệu sản phẩm</h2>
+            <p class="product-description">
+                Sản phẩm của chúng tôi là một giải pháp hiện đại, được thiết kế để đáp ứng mọi nhu cầu của bạn. 
+                Với công nghệ tiên tiến và giao diện thân thiện, chúng tôi cam kết mang đến trải nghiệm tốt nhất 
+                cho người dùng.
+            </p>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>
+                        <span class="feature-icon">⚡</span>
+                        Hiệu suất cao
+                    </h3>
+                    <p>
+                        Tốc độ xử lý nhanh chóng, tối ưu hóa hiệu suất để đảm bảo trải nghiệm mượt mà 
+                        và không gián đoạn.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>
+                        <span class="feature-icon">🔒</span>
+                        Bảo mật tuyệt đối
+                    </h3>
+                    <p>
+                        Hệ thống bảo mật đa lớp, mã hóa dữ liệu cao cấp để bảo vệ thông tin của bạn 
+                        một cách an toàn nhất.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>
+                        <span class="feature-icon">💎</span>
+                        Dễ sử dụng
+                    </h3>
+                    <p>
+                        Giao diện trực quan, thân thiện với người dùng. Không cần kinh nghiệm kỹ thuật, 
+                        bạn có thể bắt đầu ngay lập tức.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>
+                        <span class="feature-icon">🌐</span>
+                        Đa nền tảng
+                    </h3>
+                    <p>
+                        Hoạt động trên mọi thiết bị: máy tính, điện thoại, máy tính bảng. 
+                        Truy cập mọi lúc, mọi nơi.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>
+                        <span class="feature-icon">🎯</span>
+                        Tính năng mạnh mẽ
+                    </h3>
+                    <p>
+                        Tích hợp đầy đủ các tính năng hiện đại, đáp ứng mọi nhu cầu từ cơ bản 
+                        đến nâng cao.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>
+                        <span class="feature-icon">🎨</span>
+                        Thiết kế đẹp mắt
+                    </h3>
+                    <p>
+                        Giao diện được thiết kế tinh tế, hiện đại với trải nghiệm người dùng 
+                        được tối ưu hóa.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-section">
+            <h2>Bảng giá</h2>
+            <div class="price">$99/tháng</div>
+            <p class="price-details">
+                Bao gồm tất cả tính năng cao cấp<br>
+                Hỗ trợ 24/7 | Cập nhật miễn phí | Không giới hạn người dùng
+            </p>
+            <a href="#contact" class="cta-button">Bắt đầu ngay</a>
+        </div>
+
+        <footer>
+            <p>© 2024 CFTest. Tất cả quyền được bảo lưu.</p>
+            <p>Liên hệ: info@cftest.com | +84 123 456 789</p>
+        </footer>
+    </div>
+</body>
+</html>
